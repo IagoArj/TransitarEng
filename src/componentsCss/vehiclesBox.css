@@ -1,0 +1,40 @@
+.mainBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 180px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-right: 15px;
+    box-shadow: 5px  5px 16px rgb(80, 83, 83)
+}
+.placa{
+    font-weight: bold;
+    color: #707070;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.veiculo{
+    font-weight: bold;
+    color: #707070;
+    margin-top: 8px;
+    font-size: 15px;
+}
+.estacionado{
+    font-weight: bold;
+    color: #707070;
+    font-size: 15px;
+    margin: 0px;
+}
+.btnDeletar{
+    margin-top: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #dd3652;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+}.btnDeletar:hover{
+    background-color: #9e1e34
+}

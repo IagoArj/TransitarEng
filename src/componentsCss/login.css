@@ -1,0 +1,99 @@
+.registrarSe{
+    font-weight: bold;
+    color: #707070;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.fundo{
+        background: url("./background.jpg");
+        height: 1024px;
+        background: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.iconTransitar{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    background-color: #4e99e9;
+    box-shadow: 3px  3px 3px rgb(80, 83, 83)
+}
+.inputLogin{
+    margin-top: 35px;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    border-width: 0.5px;
+    border-color: rgb(80, 83, 83);
+    box-shadow: 3px  3px 3px rgb(80, 83, 83);
+    
+}
+.loginEntrar{
+    margin-top: 35px;
+    width: 150px;
+    height: 50px;
+    background-color: #6B8AD5;
+    border-radius: 50px;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 3px  3px 3px rgb(80, 83, 83)
+}
+.loginEntrar:hover{
+    background-color: rgb(63, 94, 168);
+    
+}
+
+
+.bgLogin{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.allLoginBox{
+    width: 1000px;
+    height: 600px;
+    background-color: #4e99e9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 3px  3px 3px rgb(80, 83, 83)
+}
+.loginBox{
+    width: 360px;
+    height: 500px;
+    background: #fff;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px  5px 5px rgb(80, 83, 83)
+}
+.singinBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    height: 500px;
+    background: #fff;
+    margin-left: 40px;
+    box-shadow: 5px  5px 5px rgb(80, 83, 83);
+    justify-content: space-around;
+}
+.direction{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.directionrow{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
