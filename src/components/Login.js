@@ -102,7 +102,24 @@ export default class Login extends React.Component {
                 phone: this.state.RegisterPhone,
                 birthday: this.state.RegisterBirthday
             }).then(res => {
-                this.logar()
+                axios.post('https://zaf-dev.herokuapp.com/v1/user/login', {
+                    cpf_cnpj: this.state.RegisterCpf_cnpj,
+                    password: this.state.RegisterPassword
+                }).then(res => {
+                    localStorage.setItem('token', res.data.user.token);
+                    localStorage.setItem('name', res.data.user.name);
+                    localStorage.setItem('cpf_cnpj', res.data.user.cpf_cnpj);
+                    localStorage.setItem('email', res.data.user.email);
+                    localStorage.setItem('phone', res.data.user.phone);
+                    window.location = '/home';
+
+
+                }).catch((error) => {
+                    alert('senha ou cpf/cnpj incorretos')
+                    console.log(error.message || error);
+
+                });
+
             }).catch((error) => {
                 console.log(error.message || error);
 
@@ -169,7 +186,7 @@ export default class Login extends React.Component {
                                     onChange={this.handleChangeRegisgerBirthday}
                                     placeholder='Aniversário'
                                 />
-                                <button className="loginEntrar" onClick={this.registrar}>Entrar</button>
+                                <button className="loginEntrar" onClick={this.registrar}>Cadastrar</button>
                             </div>
                         </div>
                     </div>
